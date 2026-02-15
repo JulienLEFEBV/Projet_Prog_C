@@ -1,0 +1,13 @@
+static void EcrireIdentiteTrieeParSexeGV(tArbre Arbre,FILE* f, char Sexe):
+    Cette fonction écrit les identités des personnes en fonction de leur sexe. Cela permet 
+d'écrire séparément les identités des hommes et des femmes. J'ai décidé de créer cette fonction
+pour factoriser le code.
+static void ArbreAfficherAscendantsRec(struct sFiche *Fiche_courante, int niveau):
+    Cette fonction est une fonction récursive qui affiche les ascendants de la personne de la fiche 
+pointée par Fiche_courante et affiche le nombre de tabulation en fonction du niveau. J'ai décidé de 
+créer cette fonction pour séparer la partie récursive du reste de la fonction 
+void ArbreAfficherAscendants(tArbre Arbre, int Identifiant).
+static void ArbreEcrireAscendantsGVRec(struct sFiche *Fiche_courante, int Id_descendant, FILE *f):
+    Cette fonction est une fonction récursive qui écrit les ascendants de la personne de la fiche 
+pointée par Fiche_courante dans le fichier f. J'ai décidé de créer cette fonction pour séparer la partie
+récursive du reste de la fonction void ArbreEcrireAscendantsGV(tArbre Arbre, int Identifiant, char Fichier[])

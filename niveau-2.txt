@@ -1,0 +1,7 @@
+int ArbreLireLienParentef(FILE *f, int *pIdEnfant, int *pIdParent, char *pParente):
+    J'ai utilisé fscanf pour avoir directement les identifiants sous forme d'int et pour
+avoir le lien de parenté directement sous forme de char
+testgenea.c:
+    J'ai décidé comme pour testidentite d'appeler uniquement les fonctions de lectures (de l'arbre
+et des liens de parentés), d'affichage et de libération car les autres fonctions du module sont 
+appelées par celles-ci.

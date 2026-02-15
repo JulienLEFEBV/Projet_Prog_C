@@ -1,0 +1,10 @@
+    La constante symbolique NB_CARACTERE_MAX contient le nombre de caractères maximum contenu 
+sur une ligne.
+tIdentite IdentiteLiref(FILE *f):
+    J'ai décidé d'utiliser la fonction fscanf plutôt que fgets car fscanf enlève les '\n' 
+qui ne doivent pas être la date de naissance. De plus fscanf permet d'avoir directement le contenu d'une ligne sous forme d'int pour l'identifiant ou sous forme de char pour le sexe.
+Mais j'ai utilisé une boucle while avec fgetc pour le nom et le prenom pour les cas où il y 
+aurait un espace. De plus cela permet de ne pas mettre '\n' dans la chaine de caractères.
+testidentite.c:
+    J'ai decidé d'appeler seulement les fonctions de lecture, d'écriture et de libération car
+les autres fonctions sont appelées par c'est trois fonctions.
